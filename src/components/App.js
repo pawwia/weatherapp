@@ -1,9 +1,10 @@
 import './App.css';
-import GiveCityForm from './GiveCityForm';
+import Page from './Page';
 function App() {
   return (
     <div className="App">
-     <GiveCityForm/>
+      <Page/>
+
  </div>
   );
 }
