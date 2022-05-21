@@ -1,0 +1,83 @@
+.weatherResult{
+    border-radius: 10px;
+    background-color: rgb(118, 118, 118,0.6);
+
+   margin-top:10vh;
+   margin-right: auto;
+   margin-left: auto;
+   text-align:center;
+    width:60vw;
+    min-height:450px;
+
+}
+.weatherToday{
+width:100%;
+display: flex;}
+.imageToday
+{    flex:1;
+        width:50%;
+    height:100%;}
+.imageToday img{
+    width:15vw;
+    height:15vw;
+    text-align: center;
+    display: block;
+    margin:auto;
+}
+.textToday{
+flex:1;
+    height:100%;
+    width:50%;
+    padding-top:5vh;
+    padding-left:10vw;
+    color:#fff;
+    text-align: left;
+}
+.textToday h2{
+    font-size: 30px;
+    margin-bottom: auto;
+}
+.textToday h1{
+    font-size: 40px;;
+    margin-top:auto;
+
+}
+.textToday a{
+    font-size:25px;
+    margin-top:25vh;
+}
+
+.weatherForecast{
+    float:left;
+    width:25%;
+    height:10vw;
+    margin-right:6.25%;
+    background-color: rgb(118, 118, 118,0.6);
+    border-radius: 13px;
+    color:#fff;
+    font-size:20px;
+    margin-top:15%;
+}
+.weatherForecastCont :nth-child(1){
+    margin-left:6.25%;
+    }
+
+    .weatherForecastCont{
+        position:inherit;
+        top:-10px;
+
+    }
+    .weatherForecastTitle{
+        width:100%;
+        margin-left:0 !important;
+
+    }
+    .weatherForecastImage{
+width:100%;
+    }
+    .weatherForecastImage img{
+        width:5vw;
+    }
+    .weatherForecastTemperature{
+margin:auto;
+    }

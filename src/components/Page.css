@@ -1,36 +1,29 @@
 
 
 
-header{
-    width:100vw;
-    height:300px;
-    background-image:url(../images/background.jpeg);
-    background-position: center;
-    text-align: center;
-    vertical-align: text-bottom;
-    font-size: 10vh;
-    color:#bfbfbf;
-    box-shadow:5px 5px 10px;
-    -webkit-text-stroke: 2px black;
-    padding-top:15vh
-}
-footer{
-    width:100vw;
-    height:120px;
-    background-image: url(../images/footer.jpeg);
-    background-position: center;
-}
+
+
 .weatherApp{
     min-height: 150vh;
-    padding-left: 30vh;
     padding-top: 30vh;
+    background-image: url('../images/clouds.jpg');
+    margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
 .weatherApp input {
 background-color: aliceblue;
-padding:15px;
+
 font-size:5vh;
 border-radius: 10px;
 margin-right:20px;
+}
+.weatherApp input:first-child{
+    width:30vw;
+    height:50px;
+}
+.weatherApp input:nth-child(2){
+    width:20vw;
 }
 .weatherApp input :active{
     border: 3px solid salmon;

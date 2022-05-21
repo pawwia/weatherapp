@@ -1,8 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import ShowLocation from './ShowLocation';
 const Weather = (props) => {
-
-    const queryWeather='http://api.weatherapi.com/v1/current.json?key=aea8a6e4b16c4785b06114150221205&q='+props.city+'&aqi=no&lang=pl';
+    
+    const queryWeather='https://api.weatherapi.com/v1/forecast.json?key=aea8a6e4b16c4785b06114150221205&q='+props.city+'&days=5&aqi=yes&alerts=no&lang=pl';
 const [dataWeather,setDataWeather]=useState();
 const [error,setError]=useState();
     useEffect(()=>{
@@ -16,6 +16,8 @@ console.log(error);
         )
 
     },[])
+
+
 
   if(dataWeather)  return (
 <ShowLocation weather={dataWeather}/>
