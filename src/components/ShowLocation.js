@@ -1,11 +1,13 @@
 import React from 'react';
 import './ShowLocation.css';
 const ShowLocation = (weather) => {
+   
     const d=new Date();
-    const weekDay=['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'];
+    const weekDay=['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'];
     const todayDay=d.getDay();
-    const days=[weekDay[(todayDay-1)>6?todayDay-8:todayDay-1],weekDay[todayDay>6?todayDay-7:todayDay],weekDay[(todayDay+1)>6?todayDay-6:todayDay+1]];
+    const days=[weekDay[todayDay],weekDay[todayDay+1],weekDay[todayDay+2]];
 
+    {console.log(todayDay)}
     return ( 
 <div className='weatherResult'>
 

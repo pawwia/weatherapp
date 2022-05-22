@@ -4,7 +4,7 @@
 
 
 .weatherApp{
-    min-height: 150vh;
+    min-height: 800px;
     padding-top: 30vh;
     background-image: url('../images/clouds.jpg');
     margin-left: auto;
@@ -17,19 +17,21 @@ background-color: aliceblue;
 font-size:5vh;
 border-radius: 10px;
 margin-right:20px;
+height:50px;
 }
 .weatherApp input:first-child{
-    width:30vw;
-    height:50px;
+    min-width:30vw;
 }
 .weatherApp input:nth-child(2){
-    width:20vw;
+    min-width:20vw;
 }
 .weatherApp input :active{
     border: 3px solid salmon;
 }
-@media  screen and (max-width: 600px) {
-    body{
-        background-color: red;
+@media  screen and (max-width: 1000px) {
+    
+    .weatherApp input {
+    width:100%
     }
+
 }

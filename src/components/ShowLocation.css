@@ -18,11 +18,13 @@ display: flex;}
         width:50%;
     height:100%;}
 .imageToday img{
-    width:15vw;
-    height:15vw;
+    width:250px;
+    height:250px;
     text-align: center;
     display: block;
     margin:auto;
+    margin-top:30px;
+    margin-left:80px;
 }
 .textToday{
 flex:1;
@@ -50,7 +52,7 @@ flex:1;
 .weatherForecast{
     float:left;
     width:25%;
-    height:10vw;
+    min-height:150px;
     margin-right:6.25%;
     background-color: rgb(118, 118, 118,0.6);
     border-radius: 13px;
@@ -76,8 +78,38 @@ flex:1;
 width:100%;
     }
     .weatherForecastImage img{
-        width:5vw;
+        width:90px;
     }
     .weatherForecastTemperature{
 margin:auto;
+    }
+    .error{
+        font-weight: bold;
+        font-size:30px;
+        color:red;
+        margin-top:40px;
+    }
+
+    @media  screen and (max-width: 1000px) {
+       .weatherResult{
+           width:100%;
+       }
+       .weatherForecast{
+           width:100%;
+           margin-right:0;
+           margin-top:0;
+           float:none;
+       }
+       .weatherForecastCont :nth-child(1){
+    margin-left: 0;   
+    margin-top:50px;
+    }
+    .imageToday img{
+
+        margin:0;
+        width: 200px;
+    }
+    .textToday h1{
+font-size: 30px;
+    }
     }
